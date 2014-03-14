@@ -1,12 +1,15 @@
 <?php
   
-  if (!isset($_GET['date'])) die("SET A DATE ASSHOLE");
+  $date = $_GET['date'];
+  
+  if (!isset($date) die("SET A DATE ASSHOLE");
+  if ($date < 19200101 OR $date > 20191207) die("WRONG DATE ASSHOLE");
       
   $file_db = new PDO('sqlite:itt.sqlite');
   $result = $file_db->query('SELECT * FROM charts WHERE date=' . $_GET['date']);
 
-  foreach ($result as $date) {
-    print_r($date);
+  foreach ($result as $resultdate) {
+    print_r($resultdate);
   }
       
 ?>
