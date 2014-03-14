@@ -4,6 +4,7 @@
   <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
+  <h1>
 <?php
   
   $date = $_GET['date'];
@@ -19,6 +20,7 @@
   }
       
 ?>
+  </h1>
   </body>
 </html>
   
