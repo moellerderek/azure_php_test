@@ -1,3 +1,9 @@
+<html>
+  <head>
+  <title>Jew are so funny</title>
+  <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
 <?php
   
   $date = $_GET['date'];
@@ -13,3 +19,6 @@
   }
       
 ?>
+  </body>
+</html>
+  
