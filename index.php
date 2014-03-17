@@ -30,7 +30,7 @@
 <th>Stop</th>
 </tr>";
 
-while($row = mysqli_fetch_array($result))
+while($result = odbc_fetch_row($result, 0);)
   {
   echo "<tr>";
   echo "<td>" . $row['Self'] . "</td>";
