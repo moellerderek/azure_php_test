@@ -17,7 +17,19 @@
   $result = $file_db->query('SELECT * FROM charts WHERE date=' . $date);
 
   foreach ($result as $resultdate) {
-    print_r($resultdate);
+    echo'<table>';
+    echo'<tr>'. $row['date']."</tr>"; 
+    echo'<td>'. $row['self']."</td>";
+    echo'<td>'. $row['talk'].'</td>';
+    echo'<td>'. $row['love'].'</td>';
+    echo'<td>'. $row['does']."</td>";
+    echo'<td>'. $row['grow'].'</td>';
+    echo'<td>'. $row['pull'].'</td>';
+    echo'<td>'. $row['obox']."</td>";
+    echo'<td>'. $row['spur'].'</td>';
+    echo'<td>'. $row['stop'].'</td>';
+    echo'<tr>'.'</tr>';
+    echo'</table>';
   }
       
 ?>
