@@ -13,8 +13,8 @@ $date = $_GET['date'];
 
     session_start();
 
-    $db = odbc_connect("PDO('sqlite:itt.sqlite'", "", "") or die ("could not connect<br />");
-	$file_db = new PDO('sqlite:itt.sqlite');
+    $file_db = new PDO('sqlite:itt.sqlite'); or die ("could not connect<br />");
+	
   	$stmt = $file_db->query('SELECT * FROM charts WHERE date=' . $date);
 
     $date = 'date';
