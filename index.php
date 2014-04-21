@@ -17,20 +17,23 @@
   $result = $file_db->query('SELECT * FROM charts WHERE date=' . $date);
 
   foreach ($result as $resultdate) {
-    echo'<table>';
-    echo'<tr>'. $row['date']."</tr>"; 
-    echo'<tr>'. $row['self']."</tr>";
-    echo'<tr>'. $row['talk'].'</tr>';
-    echo'<tr>'. $row['love'].'</tr>';
-    echo'<tr>'. $row['does']."</tr>";
-    echo'<tr>'. $row['grow'].'</tr>';
-    echo'<tr>'. $row['pull'].'</tr>';
-    echo'<tr>'. $row['obox']."</tr>";
-    echo'<tr>'. $row['spur'].'</tr>';
-    echo'<tr>'. $row['stop'].'</tr>';
-    echo'<tr>'.'</tr>';
-    echo'</table>';
+    print_r($result)
+    
+    //echo'<table>';
+    //echo'<tr>'. $row['date']."</tr>"; 
+    //echo'<tr>'. $row['self']."</tr>";
+    //echo'<tr>'. $row['talk'].'</tr>';
+    //echo'<tr>'. $row['love'].'</tr>';
+    //echo'<tr>'. $row['does']."</tr>";
+    //echo'<tr>'. $row['grow'].'</tr>';
+    //echo'<tr>'. $row['pull'].'</tr>';
+    //echo'<tr>'. $row['obox']."</tr>";
+    //echo'<tr>'. $row['spur'].'</tr>';
+    //echo'<tr>'. $row['stop'].'</tr>';
+    //echo'<tr>'.'</tr>';
+    //echo'</table>';
   }
+      
       
 ?>
   </h1>
