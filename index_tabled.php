@@ -27,6 +27,7 @@ $date = $date = $_GET['date'];
     $spur = 'spur';
     $stop = 'stop';
     
+echo $db;
 
 $sql = "SELECT * FROM charts WHERE date=' . $date");
 
