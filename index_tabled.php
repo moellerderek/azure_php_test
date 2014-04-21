@@ -9,13 +9,15 @@
 
 <?php
 
-$date = $date = $_GET['date'];
+$date = $_GET['date'];
 
     session_start();
 
-    include('connect_mysql.php');
+    $db = odbc_connect("PDO('sqlite:itt.sqlite'", "", "") or die ("could not connect<br />");
+	$file_db = new PDO('sqlite:itt.sqlite');
+  	$stmt = $file_db->query('SELECT * FROM charts WHERE date=' . $date);
 
-
+    $date = 'date';
     $self = 'self';
     $feel = 'feel';
     $talk = 'talk';
@@ -27,7 +29,6 @@ $date = $date = $_GET['date'];
     $spur = 'spur';
     $stop = 'stop';
     
-echo $db;
 
 $sql = "SELECT * FROM charts WHERE date=' . $date");
 
@@ -36,7 +37,7 @@ echo "<table id='display'>";
 while($rows = odbc_exec($db, $stmt))
 {
     echo"<br>";
-    echo"<tr><td>";
+    echo"<tr>$date</tr><td>";
     echo"$rows[$self]<br></td>";
 
     echo"<td>Feel $rows[$feel] height='200px' width='200px'><br></td>";
