@@ -19,19 +19,19 @@
   foreach ($result as $resultdate) {
     print_r($result)
     
-    //echo'<table>';
-    //echo'<tr>'. $row['date']."</tr>"; 
-    //echo'<tr>'. $row['self']."</tr>";
-    //echo'<tr>'. $row['talk'].'</tr>';
-    //echo'<tr>'. $row['love'].'</tr>';
-    //echo'<tr>'. $row['does']."</tr>";
-    //echo'<tr>'. $row['grow'].'</tr>';
-    //echo'<tr>'. $row['pull'].'</tr>';
-    //echo'<tr>'. $row['obox']."</tr>";
-    //echo'<tr>'. $row['spur'].'</tr>';
-    //echo'<tr>'. $row['stop'].'</tr>';
-    //echo'<tr>'.'</tr>';
-    //echo'</table>';
+    echo'<table>';
+    echo'<tr>'. $row[0]."</tr>"; 
+    echo'<tr>'. $row[1]."</tr>";
+    echo'<tr>'. $row[2].'</tr>';
+    echo'<tr>'. $row[3].'</tr>';
+    echo'<tr>'. $row[4]."</tr>";
+    echo'<tr>'. $row[5].'</tr>';
+    echo'<tr>'. $row[6].'</tr>';
+    echo'<tr>'. $row[7]."</tr>";
+    echo'<tr>'. $row[8].'</tr>';
+    echo'<tr>'. $row[9].'</tr>';
+    echo'<tr>'.'</tr>';
+    echo'</table>';
   }
       
       
