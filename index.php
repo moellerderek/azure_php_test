@@ -19,15 +19,15 @@
   foreach ($result as $resultdate) {
     echo'<table>';
     echo'<tr>'. $row['date']."</tr>"; 
-    echo'<td>'. $row['self']."</td>";
-    echo'<td>'. $row['talk'].'</td>';
-    echo'<td>'. $row['love'].'</td>';
-    echo'<td>'. $row['does']."</td>";
-    echo'<td>'. $row['grow'].'</td>';
-    echo'<td>'. $row['pull'].'</td>';
-    echo'<td>'. $row['obox']."</td>";
-    echo'<td>'. $row['spur'].'</td>';
-    echo'<td>'. $row['stop'].'</td>';
+    echo'<tr>'. $row['self']."</tr>";
+    echo'<tr>'. $row['talk'].'</tr>';
+    echo'<tr>'. $row['love'].'</tr>';
+    echo'<tr>'. $row['does']."</tr>";
+    echo'<tr>'. $row['grow'].'</tr>';
+    echo'<tr>'. $row['pull'].'</tr>';
+    echo'<tr>'. $row['obox']."</tr>";
+    echo'<tr>'. $row['spur'].'</tr>';
+    echo'<tr>'. $row['stop'].'</tr>';
     echo'<tr>'.'</tr>';
     echo'</table>';
   }
