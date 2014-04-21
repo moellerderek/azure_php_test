@@ -18,7 +18,6 @@
 
   foreach ($result as $resultdate) {
     print_r($result)
-
   }
 
 odbc_free_result($result);
