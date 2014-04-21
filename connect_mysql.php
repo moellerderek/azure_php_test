@@ -9,6 +9,8 @@
 
 	$db = odbc_connect("PDO('sqlite:itt.sqlite'", "", "") or die ("could not connect<br />");
 	
+	return $db;
+	
 ?>
 </body>
 </html>
