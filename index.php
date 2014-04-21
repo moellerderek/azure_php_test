@@ -1,7 +1,8 @@
 <html>
   <head>
   <title>Jew are so funny</title>
-  <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
+  <link href="index.css" rel="stylesheet">
   </head>
   <body>
   <h1>
