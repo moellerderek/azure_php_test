@@ -21,15 +21,15 @@
     
     echo'<table>';
     echo'<tr>'. $row[0]."</tr>"; 
-    echo'<tr>'. $row[1]."</tr>";
-    echo'<tr>'. $row[2].'</tr>';
-    echo'<tr>'. $row[3].'</tr>';
-    echo'<tr>'. $row[4]."</tr>";
-    echo'<tr>'. $row[5].'</tr>';
-    echo'<tr>'. $row[6].'</tr>';
-    echo'<tr>'. $row[7]."</tr>";
-    echo'<tr>'. $row[8].'</tr>';
-    echo'<tr>'. $row[9].'</tr>';
+    echo'<td>'. $row[1]."</td>";
+    echo'<td>'. $row[2].'</td>';
+    echo'<td>'. $row[3].'</td>';
+    echo'<td>'. $row[4]."</td>";
+    echo'<td>'. $row[5].'</td>';
+    echo'<td>'. $row[6].'</td>';
+    echo'<td>'. $row[7]."</td>";
+    echo'<td>'. $row[8].'</td>';
+    echo'<td>'. $row[9].'</td>';
     echo'<tr>'.'</tr>';
     echo'</table>';
   }
