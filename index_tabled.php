@@ -6,53 +6,59 @@
   <body>
  <table border="1">
 <caption>Dates</caption>
-<tr>
-  <tr>
-<th>Self</th>
-<th>Feel</th>
-<th>Talk</th>
-<th>Love</th>
-<th>Does</th>
-<th>Grow</th>
-<th>Pull</th>
-<th>Obox</th>
-<th>Spur</th>
-<th>Stop</th>
-</tr>
 
 <?php
 
-	$date = $date = $_GET['date'];
+$date = $date = $_GET['date'];
 
-	$db = odbc_connect("PDO('sqlite:itt.sqlite'", "", "") or die ("could not connect<br />");
+    session_start();
 
-	$stmt = "SELECT * FROM charts WHERE date=' . $date";
+    include('connect_mysql.php');
 
-	$result = odbc_exec($db, $stmt);
 
-  if ($result == FALSE) die ("could not execute statement $stmt<br />");
+    $self = 'self';
+    $feel = 'feel';
+    $talk = 'talk';
+    $love = 'love';
+    $does = 'does';
+    $grow = 'grow';
+    $pull = 'pull';
+    $obox = 'obox';
+    $spur = 'spur';
+    $stop = 'stop';
+    
 
-  while (odbc_fetch_row($result)) // while there are rows
-  {
-     print "<tr>\n";
-     print "  <td>" . odbc_result($result, "Self") . "\n";
-     print "  <td>" . odbc_result($result, "Feel") . "\n";
-     print "  <td>" . odbc_result($result, "Talk") . "\n";
-     print "  <td>" . odbc_result($result, "Love") . "\n";
-     print "  <td>" . odbc_result($result, "Does") . "\n";
-     print "  <td>" . odbc_result($result, "Grow") . "\n";
-     print "  <td>" . odbc_result($result, "Pull") . "\n";
-     print "  <td>" . odbc_result($result, "Obox") . "\n";
-     print "  <td>" . odbc_result($result, "Spur") . "\n";
-     print "  <td>" . odbc_result($result, "Stop") . "\n";
-     print "</tr>\n";
-  }
+$sql = "SELECT * FROM charts WHERE date=' . $date");
 
-  odbc_free_result($result);
+echo "<table id='display'>";
 
-  odbc_close($db);
+while($rows = odbc_exec($db, $stmt))
+{
+    echo"<br>";
+    echo"<tr><td>";
+    echo"$rows[$self]<br></td>";
+
+    echo"<td>Feel $rows[$feel] height='200px' width='200px'><br></td>";
+    echo"<td>Talk $rows[$talk]<br></td>";
+    echo"<td>Love $rows[$love]<br></td>";
+    echo"<td>Does $rows[$does]<br></td>";    
+    echo"<td>Does $rows[$grow]<br></td>";
+    echo"<td>Does $rows[$pull]<br></td>";
+    echo"<td>Does $rows[$obox]<br></td>";    
+    echo"<td>Does $rows[$spur]<br></td>";
+    echo"<td>Does $rows[$stop]<br></td>";
+    
+    echo"</tr>";
+
+}
+
+echo "</table>";
+
+odbc_free_result($result);
+odbc_close($db);
+
 ?>
-  </h1>
-  </body>
-</html>
+
+
+
   
