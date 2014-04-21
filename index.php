@@ -20,8 +20,10 @@
     print_r($result)
 
   }
-      
-      
+
+odbc_free_result($result);
+odbc_close($db);
+   
 ?>
   </h1>
   </body>
