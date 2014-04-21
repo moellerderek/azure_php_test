@@ -28,9 +28,6 @@ $date = $_GET['date'];
     $obox = 'obox';
     $spur = 'spur';
     $stop = 'stop';
-    
-
-$sql = "SELECT * FROM charts WHERE date=' . $date");
 
 echo "<table id='display'>";
 
