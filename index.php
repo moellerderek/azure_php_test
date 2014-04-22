@@ -16,8 +16,9 @@
   $file_db = new PDO('sqlite:itt.sqlite');
   $result = $file_db->query('SELECT * FROM charts WHERE date=' . $date);
 
-  foreach ($result as $resultdate) {
-    print_r($result)
+  foreach ($result as $resultdate) 
+  {
+    print_r($result);
   }
 
 odbc_free_result($result);
