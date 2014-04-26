@@ -18,11 +18,7 @@
 	{
 	     $statement->execute();
 	}
-	catch(PDOException $e)
-	{
-     echo "Statement failed: " . $e->getMessage();
-     return false;
-	}
+
 	$result = $statement->fetchAll();
 	print_r($result);
 ?>
