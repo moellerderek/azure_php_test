@@ -15,11 +15,17 @@
       
 	$file_db = new PDO('sqlite:itt.sqlite');
 	$result = $file_db->query("SELECT * FROM charts WHERE date=".$date);
-
-foreach ($result as $resultdate)
-  {
-    print_r($result);
-  } 
+	$statement = $sqlite->prepare(SELECT * FROM charts WHERE date=".$date);
+			{
+		     $statement->execute();
+			}
+	catch(PDOException $e)
+			{
+     echo "Statement failed: " . $e->getMessage();
+     return false;
+			}
+	$result = $statement->fetchAll();
+	print_r($result);
 ?>
   </h1>
   </body>
