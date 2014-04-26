@@ -6,14 +6,16 @@
   </head>
   <body>
   <h1>
+
 <?php
   
   $date = $_GET['date'];
-  
+  $sqliteerror = echo "Shits broke, yo.";
+
   if (!isset($date)) die("SET A DATE ASSHOLE");
   if ($date < 19200101 OR $date > 20191207) die("WRONG DATE ASSHOLE");
   
-if ($db = sqlite_open('itt.sqlite', 0666, $sqliteerror)) { 
+if ($db = sqlite_open('sqlite:itt.sqlite', 0666, $sqliteerror)) { 
     //sqlite_query($db, 'CREATE TABLE foo (bar varchar(10))');
     //sqlite_query($db, "INSERT INTO foo VALUES ('fnord')");
     $result = sqlite_query($db, 'SELECT * FROM charts WHERE date=".$date');
