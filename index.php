@@ -16,7 +16,13 @@
 	$file_db = new PDO('sqlite:itt.sqlite');
 	$result = $file_db->query('SELECT * FROM charts WHERE date=' . $date);
 
-  foreach ($result as $resultdate)
+if(!$result)
+{
+    echo 'fail';
+    return false;
+}
+  
+foreach ($result as $resultdate)
   {
     print_r($result);
   } 
