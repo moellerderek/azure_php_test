@@ -14,14 +14,8 @@
   if ($date < 19200101 OR $date > 20191207) die("WRONG DATE ASSHOLE");
       
 	$file_db = new PDO('sqlite:itt.sqlite');
-	$result = $file_db->query('SELECT * FROM charts WHERE date=' . $date);
+	$result = $file_db->query("SELECT * FROM charts WHERE date=".$date);
 
-if(!$result)
-{
-    echo 'fail';
-    return false;
-}
-  
 foreach ($result as $resultdate)
   {
     print_r($result);
