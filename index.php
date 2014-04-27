@@ -27,8 +27,8 @@
 //  	print_r ($result);
 //  	echo "</pre>"."<br>";
 //  	}
-
-	echo "<pre>".print_r($conn->query($sql)->fetchAll(),true)."</pre><br />";
+	echo "<pre>".print_r($result)."</pre><br />";
+	//echo "<pre>".print_r($conn->query($sql)->fetchAll(),true)."</pre><br />";
 	//echo "<pre>".print_r($array)." \n"."</pre><br />";
 
 	//include (report.php);
