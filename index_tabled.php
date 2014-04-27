@@ -17,6 +17,20 @@ $date = $_GET['date'];
 	
   	$stmt = $file_db->query('SELECT * FROM charts WHERE date=' . $date);
 
+$array = array(
+    $date = $row["date"];
+    $self = $row["self"];
+    $feel = $row["feel"];
+    $talk = $row["talk"];
+    $love = $row["love"];
+    $does = $row["does"];
+    $grow = $row["grow"];
+    $pull = $row["pull"];
+    $obox = $row["obox"];
+    $spur = $row["spur"];
+    $stop = $row["stop"];
+    )
+
     $date = 'date';
     $self = 'self';
     $feel = 'feel';
@@ -41,11 +55,11 @@ while($rows = odbc_exec($db, $stmt))
     echo"<td>Talk $rows[$talk]<br></td>";
     echo"<td>Love $rows[$love]<br></td>";
     echo"<td>Does $rows[$does]<br></td>";    
-    echo"<td>Does $rows[$grow]<br></td>";
-    echo"<td>Does $rows[$pull]<br></td>";
-    echo"<td>Does $rows[$obox]<br></td>";    
-    echo"<td>Does $rows[$spur]<br></td>";
-    echo"<td>Does $rows[$stop]<br></td>";
+    echo"<td>Grow $rows[$grow]<br></td>";
+    echo"<td>Pull $rows[$pull]<br></td>";
+    echo"<td>Obox $rows[$obox]<br></td>";    
+    echo"<td>Spur $rows[$spur]<br></td>";
+    echo"<td>Stop $rows[$stop]<br></td>";
     
     echo"</tr>";
 
