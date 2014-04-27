@@ -21,7 +21,7 @@
     
 foreach ($result) as $row {
   echo "<pre>";
-  print_r ($row);
+  print_r ($result);
   echo "</pre>"."<br>";
   }
 
