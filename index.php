@@ -17,13 +17,18 @@
 	$conn = new PDO('sqlite:itt.sqlite');
 	$sql = 'SELECT * FROM charts WHERE date='.$date;
 
-	//$array = $conn->query($sql)->fetchAll(),true;
-      
-	echo "<pre>".print_r($conn->query($sql)->fetchAll(),true)."</pre><br />";
+	$result = $conn->query($sql)->fetchAll(),true;
+    
+foreach ($result) as $row {
+  echo "<pre>";
+  print_r ($row);
+  echo "</pre>"."<br>";
+  }
+
+	//echo "<pre>".print_r($conn->query($sql)->fetchAll(),true)."</pre><br />";
 	//echo "<pre>".print_r($array)." \n"."</pre><br />";
 
-	include (report.php);
-	
+	//include (report.php);
 ?>
   </h1>
   </body>
