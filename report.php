@@ -1,3 +1,11 @@
+<html>
+<title>Report</title>
+<head>
+</head>
+<body>
+
+<?php
+
 /**
  * Translate a result array into a HTML table
  *
@@ -59,3 +67,6 @@ function array2table($array, $recursive = false, $null = '&nbsp;')
     $table .= '</table>';
     return $table;
 }
+?>
+</body>
+</html>
