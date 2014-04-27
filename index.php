@@ -33,7 +33,7 @@
 //    $spur = result[8];
 //    $stop = result[9];
 	
-echo "<div class="mesa">"."<p>".$date."</p>"."</div>";
+//echo "<div class="mesa">"."<p>".$date."</p>"."</div>";
   		
 //$result = $conn->query($sql)->fetchAll(),true);
   
