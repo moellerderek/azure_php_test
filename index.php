@@ -17,7 +17,7 @@
 	$conn = new PDO('sqlite:itt.sqlite');
 	$sql = 'SELECT * FROM charts WHERE date='.$date;
 
-	//$result = $conn->query($sql)->fetchAll(),true;
+	$result = print_r($conn->query($sql)->fetchAll(),true);
     
 //foreach ($result) {
   //echo "<pre>";
@@ -25,7 +25,7 @@
   //echo "</pre>"."<br>";
   //}
 
-	echo "<pre>".print_r($conn->query($sql)->fetchAll(),true)."</pre><br />";
+	//echo "<pre>".print_r($conn->query($sql)->fetchAll(),true)."</pre><br />";
 	//echo "<pre>".print_r($array)." \n"."</pre><br />";
 
 	//include (report.php);
