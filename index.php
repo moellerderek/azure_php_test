@@ -18,9 +18,12 @@
 	$sql = 'SELECT * FROM charts WHERE date='.$date;
 
 	$result = $conn->query($sql)->fetchAll(),true);
-	
-	print_r($result){
-    $date = result[0];
+
+echo "<pre>".print_r($conn->query($sql)->fetchAll(),true)."</pre><br />";
+?>
+
+<?php
+	$date = result[0];
     $self = result[1];
     $feel = result[2];
     $talk = result[3];
@@ -31,21 +34,20 @@
     $obox = result[7];
     $spur = result[8];
     $stop = result[9];
-}
+	
+echo "<div class="mesa">"."<p>".$date."</p>"."</div>";
+  		
       
 	//print_r($result);
-
-    
-//foreach ($result) {
-//		echo "<pre>";
-//  	print_r ($result);
-//  	echo "</pre>"."<br>";
-//  	}
+   
+	//foreach ($result) {
+	//		echo "<pre>";
+	//  	print_r ($result);
+	//  	echo "</pre>"."<br>";
+	//  	}
 
 	//echo "<pre>".print_r($result)."</pre><br />";
-echo "<pre>".print_r($conn->query($sql)->fetchAll(),true)."</pre><br />";
 	//echo "<pre>".print_r($array)." \n"."</pre><br />";
-
 	//include (report.php);
 ?>
   </h1>
