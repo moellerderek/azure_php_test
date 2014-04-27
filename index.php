@@ -19,9 +19,9 @@
 
 	echo "<pre>".print_r($conn->query($sql)->fetchAll(),true)."</pre><br />";
 ?>
-
-<?php
-	$date = result[0];
+<br>
+//<?php
+//	$date = result[0];
 //    $self = result[1];
 //    $feel = result[2];
 //    $talk = result[3];
