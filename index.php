@@ -19,7 +19,7 @@
 
 	$result = print_r($conn->query($sql)->fetchAll(),true);
 	
-	print_r($result);
+	//print_r($result);
 
     
 //foreach ($result) {
