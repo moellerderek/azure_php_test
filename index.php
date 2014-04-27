@@ -19,7 +19,7 @@
 
 	$result = $conn->query($sql)->fetchAll(),true;
     
-foreach ($result) as $row {
+foreach ($result) {
   echo "<pre>";
   print_r ($result);
   echo "</pre>"."<br>";
