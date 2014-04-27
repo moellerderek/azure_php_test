@@ -20,17 +20,17 @@
 	//$result = $conn->query($sql)->fetchAll(),true);
 	
 $result = array($sql)->fetchAll(),true){
-    $date = $row[0];
-    $self = $row[1];
-    $feel = $row[2];
-    $talk = $row[3];
-    $love = $row[4];
-    $does = $row[4];
-    $grow = $row[5];
-    $pull = $row[6];
-    $obox = $row[7];
-    $spur = $row[8];
-    $stop = $row[9];
+    $date = result[0];
+    $self = result[1];
+    $feel = result[2];
+    $talk = result[3];
+    $love = result[4];
+    $does = result[4];
+    $grow = result[5];
+    $pull = result[6];
+    $obox = result[7];
+    $spur = result[8];
+    $stop = result[9];
 }
       
 	//print_r($result);
