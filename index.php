@@ -19,7 +19,7 @@
 
 	//$array = $conn->query($sql)->fetchAll(),true;
       
-	//echo "<pre>".print_r($conn->query($sql)->fetchAll(),true)."</pre><br />";
+	echo "<pre>".print_r($conn->query($sql)->fetchAll(),true)."</pre><br />";
 	//echo "<pre>".print_r($array)."</pre><br />";
 
 	include (report.php);
