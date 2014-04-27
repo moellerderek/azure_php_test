@@ -6,12 +6,19 @@
 
 <?php
 $array = array(
-    'fruit1' => 'apple',
-    'fruit2' => 'orange',
-    'fruit3' => ' ',
-    'fruit4' => ' ',
-    'fruit5' => 'apple');
-
+    [0] => 'date',
+    [1] => 'self',
+    [2] => 'feel',
+    [3] => 'talk',
+    [4] => 'love',
+    [5] => 'does',
+    [6] => 'grow',
+    [7] => 'pull',
+    [8] => 'obox',
+    [9] => 'spur',
+    [10] => 'stop';
+    )
+    
     for ($i = 0; $i <  count($array); $i++) {
     $key=key($array);
     $val=$array[$key];
