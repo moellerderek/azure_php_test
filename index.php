@@ -21,17 +21,17 @@
 ?>
 <br>
 //<?php
-//	$date = result[0];
+//	  $birthdate = result[0];
 //    $self = result[1];
 //    $feel = result[2];
 //    $talk = result[3];
 //    $love = result[4];
-//    $does = result[4];
-//    $grow = result[5];
-//    $pull = result[6];
-//    $obox = result[7];
-//    $spur = result[8];
-//    $stop = result[9];
+//    $does = result[5];
+//    $grow = result[6];
+//    $pull = result[7];
+//    $obox = result[8];
+//    $spur = result[9];
+//    $stop = result[10];
 	
 //echo "<div class="mesa">"."<p>".$date."</p>"."</div>";
   		
