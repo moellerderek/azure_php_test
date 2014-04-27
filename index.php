@@ -22,7 +22,7 @@
 	echo "<pre>".print_r($conn->query($sql)->fetchAll(),true)."</pre><br />";
 	//echo "<pre>".print_r($array)."</pre><br />";
 
-	//include (report2.php);
+	include (report.php);
 	
 ?>
   </h1>
