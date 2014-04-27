@@ -1,18 +1,18 @@
 $row = array(
-        'date' => 'value',
-        'self' => 'value',
-        'feel' => 'value',
-        'talk' => 'value',
-        'love' => 'value',
-        'does' => 'value',
-        'gorw' => 'value',
-  		'pull' => 'value',
-  		'obox' => 'value',
-  		'spur' => 'value',
-  		'stop' => 'value',
+        '0' => 'date',
+        '1' => 'self',
+        '2' => 'feel',
+        '3' => 'talk',
+        '4' => 'love',
+        '5' => 'does',
+        '6' => 'grow',
+  		'7' => 'pull',
+  		'8' => 'obox',
+  		'9' => 'spur',
+  		'10' => 'stop',
     );
 
-    $rows = array($row, $row, $row, $row, $row, $row, $row, $row, $row, $row, 					$row, $row);
+    $rows = array($row, $row, $row, $row, $row, $row, $row, $row, $row, $row);
 
     print array_to_html($rows);
 
