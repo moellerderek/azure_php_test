@@ -17,7 +17,7 @@
 	$conn = new PDO('sqlite:itt.sqlite');
 	$sql = 'SELECT * FROM charts WHERE date='.$date;
 
-	print_r ($conn->query($sql)->fetchAll(),true);
+	$result = print_r($conn->query($sql)->fetchAll(),true);
 	
 	//print_r($result);
 
