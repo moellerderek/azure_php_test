@@ -66,7 +66,7 @@
 //    $obox = $row["obox"];
 //    $spur = $row["spur"];
 //    $stop = $row["love"];
-*/}	
+//}	
 //echo "<div class="mesa">"."<p>".$date."</p>"."</div>";
   		
 //$result = $conn->query($sql)->fetchAll(),true);
