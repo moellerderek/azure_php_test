@@ -14,8 +14,10 @@
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+//	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+//	</script>
+//	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js">
+//	</script>
 <![endif]-->
 </head>
 
@@ -33,7 +35,7 @@
 	<div class="jumbotron">
 		<div class="container">
 			<h1>Birthday Calculator</h1>
-			<p>This project is to take a Get Request, and a SQL query and do something with them.</p>
+			<p>This project is to take a Get Request, and a SQL query and do 				something with them.</p>
 		</div>
 	</div>
 <br>
@@ -48,29 +50,34 @@
 //SQL query and record return  
 	$conn = new PDO('sqlite:itt.sqlite');
 	$sql = 'SELECT * FROM charts WHERE date='.$date;
+<<<<<<< HEAD
 	$stmt = $conn->query($sql);
 	$row = $stmt->fetchObject();
 	echo $row->"date";
 	
+=======
+//	$loc = $conn->query($sql)->fetchAll(),true;
+>>>>>>> FETCH_HEAD
 
-	//echo "<pre>".print_r($conn->query($sql)->fetchAll(),true)."</pre><br />";
-	$result = $conn->query($sql)->fetchAll(),true;
+//echo print_r($loc);
+echo "<pre>".print_r($conn->query($sql)->fetchAll(),true)."</pre><br />";
+	//$result = $conn->query($sql)->fetchAll(),true;
 
 //Coverts results into something readable and alterable in HTML/CSS
-	while ($row = $conn->query($sql)->fetchAll())
-{
-	$bday = $row["date"];
-    $self = $row["self"];
-    $feel = $row["feel"];
-    $talk = $row["talk"];
-    $love = $row["love"];
-    $does = $row["does"];
-    $grow = $row["grow"];
-    $pull = $row["pull"];
-    $obox = $row["obox"];
-    $spur = $row["spur"];
-    $stop = $row["love"];
-}	
+//	while (array ($conn->query($sql)->fetchAll(),true)
+//{
+//		$bday = $row["date"];
+//    $self = $row["self"];
+//    $feel = $row["feel"];
+//    $talk = $row["talk"];
+//    $love = $row["love"];
+//    $does = $row["does"];
+//    $grow = $row["grow"];
+//    $pull = $row["pull"];
+//    $obox = $row["obox"];
+//    $spur = $row["spur"];
+//    $stop = $row["love"];
+//}	
 //echo "<div class="mesa">"."<p>".$date."</p>"."</div>";
   		
 //$result = $conn->query($sql)->fetchAll(),true);
