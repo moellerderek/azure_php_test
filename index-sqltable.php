@@ -50,8 +50,10 @@
 //SQL query and record return  
 	$conn = new PDO('sqlite:itt.sqlite');
 	$sql = 'SELECT * FROM charts WHERE date='.$date;
+	$loc = $conn->query($sql)->fetchAll(),true;
 
-	echo "<pre>".print_r($conn->query($sql)->fetchAll(),true)."</pre><br />";
+echo print_r($loc);
+//echo "<pre>".print_r($conn->query($sql)->fetchAll(),true)."</pre><br />";
 	//$result = $conn->query($sql)->fetchAll(),true;
 
 //Coverts results into something readable and alterable in HTML/CSS
