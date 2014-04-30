@@ -53,20 +53,20 @@
 	//$result = $conn->query($sql)->fetchAll(),true;
 
 //Coverts results into something readable and alterable in HTML/CSS
-//	while ($row = $conn->query($sql)->fetchAll())
-//{
-//	$bday = $row["date"];
-//    $self = $row["self"];
-//    $feel = $row["feel"];
-//    $talk = $row["talk"];
-//    $love = $row["love"];
-//    $does = $row["does"];
-//    $grow = $row["grow"];
-//    $pull = $row["pull"];
-//    $obox = $row["obox"];
-//    $spur = $row["spur"];
-//    $stop = $row["love"];
-//}	
+	while (array ($conn->query($sql)->fetchAll(),true)
+{
+	$bday = $row["date"];
+    $self = $row["self"];
+    $feel = $row["feel"];
+    $talk = $row["talk"];
+    $love = $row["love"];
+    $does = $row["does"];
+    $grow = $row["grow"];
+    $pull = $row["pull"];
+    $obox = $row["obox"];
+    $spur = $row["spur"];
+    $stop = $row["love"];
+}	
 //echo "<div class="mesa">"."<p>".$date."</p>"."</div>";
   		
 //$result = $conn->query($sql)->fetchAll(),true);
