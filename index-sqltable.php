@@ -52,30 +52,29 @@
 	$sql = 'SELECT * FROM charts WHERE date='.$date;
 	$stmt = $conn->query($sql);
 	$row = $stmt->fetchObject();
-	echo $row->"date";
 	
 
 //	$loc = $conn->query($sql)->fetchAll(),true;
 
 //echo print_r($loc);
-echo "<pre>".print_r($conn->query($sql)->fetchAll(),true)."</pre><br />";
-	//$result = $conn->query($sql)->fetchAll(),true;
+//echo "<pre>".print_r($conn->query($sql)->fetchAll(),true)."</pre><br />";
+//$result = $conn->query($sql)->fetchAll(),true;
 
 //Coverts results into something readable and alterable in HTML/CSS
-//	while (array ($conn->query($sql)->fetchAll(),true)
-//{
-//		$bday = $row["date"];
-//    $self = $row["self"];
-//    $feel = $row["feel"];
-//    $talk = $row["talk"];
-//    $love = $row["love"];
-//    $does = $row["does"];
-//    $grow = $row["grow"];
-//    $pull = $row["pull"];
-//    $obox = $row["obox"];
-//    $spur = $row["spur"];
-//    $stop = $row["love"];
-//}	
+foreach ($array as $key => $value) {
+	$bday as $row => "date";
+    $self = $row["self"];
+    $feel = $row["feel"];
+    $talk = $row["talk"];
+    $love = $row["love"];
+    $does = $row["does"];
+    $grow = $row["grow"];
+    $pull = $row["pull"];
+    $obox = $row["obox"];
+    $spur = $row["spur"];
+    $stop = $row["love"];
+}	
+
 //echo "<div class="mesa">"."<p>".$date."</p>"."</div>";
   		
 //$result = $conn->query($sql)->fetchAll(),true);
