@@ -33,7 +33,7 @@
 	<div class="jumbotron">
 		<div class="container">
 			<h1>Birthday Calculator</h1>
-			<p>This project is to take a Get Request, and a SQL query and do something with them.</p>
+			<p>This project is to take a Get Request, and a SQL query and do 				something with them.</p>
 		</div>
 	</div>
 <br>
