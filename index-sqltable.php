@@ -48,6 +48,10 @@
 //SQL query and record return  
 	$conn = new PDO('sqlite:itt.sqlite');
 	$sql = 'SELECT * FROM charts WHERE date='.$date;
+	$stmt = $conn->query($sql);
+	$row = $stmt->fetchObject();
+	echo $row->"date";
+	
 
 	//echo "<pre>".print_r($conn->query($sql)->fetchAll(),true)."</pre><br />";
 	$result = $conn->query($sql)->fetchAll(),true;
