@@ -62,7 +62,7 @@
 
 //Coverts results into something readable and alterable in HTML/CSS
 foreach ($array as $key => $value) {
-	$bday as $row => "date";
+	$bday = $row["date"];
     $self = $row["self"];
     $feel = $row["feel"];
     $talk = $row["talk"];
