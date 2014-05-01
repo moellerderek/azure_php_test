@@ -48,7 +48,7 @@
 	include ('index-sqltable.php')
 
 ?>
-		</div>
+		
 	</div>
 </div>
 
