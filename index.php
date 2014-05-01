@@ -6,7 +6,7 @@
 
 <html>
 <head>
-<title>Jew are so funny</title>
+<title>Birthdate Calculator</title>
   <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
   <link href="/css/index.css" rel="stylesheet">
 <!-- Bootstrap core CSS -->
@@ -38,6 +38,7 @@
     </div>
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
+<<<<<<< HEAD
 
 <?php
  
@@ -45,10 +46,32 @@
 ?>
 
 <br>
+=======
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Birthday Calculator</h1>
+			<p>This project is to take a Get Request, and a SQL query and do 				something with them.</p>
+		</div>
+	</div>
+>>>>>>> FETCH_HEAD
 
-<div class="sql">
-	<div class="row">
-		<div class="col-md-4">
+<!-- Container for SQL Results -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+				<li>Date</li>
+    			<li>Self</li>
+    			<li>Feel</li>
+    			<li>Talk</li>
+    			<li>Love</li>
+    			<li>Does</li>
+    			<li>Grow</li>
+    			<li>Pull</li>
+    			<li>Obox</li>
+    			<li>Spur</li>
+    			<li>Stop</li>
+			</div>
+
 <?php
 	
 	include ('index-sqltable.php');
@@ -56,18 +79,19 @@
 ?>
 		</div>
 	</div>
-</div>
-
 </body>
-<br>
 
 <footer>
 <?php
-	
+
 	include ("footer.php");
+<<<<<<< HEAD
 	callFooter(); 
 	echo returnSecondFooter("derek");
 	
+=======
+
+>>>>>>> FETCH_HEAD
 ?>
 </footer>
 </html>
