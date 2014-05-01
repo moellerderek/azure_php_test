@@ -50,6 +50,7 @@
 //SQL query and record return  
 	$conn = new PDO('sqlite:itt.sqlite');
 	$sql = 'SELECT * FROM charts WHERE date='.$date;
+	$stmt = $conn->prepare($sql);
 	if ($stmt->execute(array($_GET['date']))) {
 	while ($row = $stmt->fetch()) {
 		print_r($row);
