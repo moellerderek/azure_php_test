@@ -33,7 +33,7 @@
 	$conn = new PDO('sqlite:itt.sqlite');
 	$sql = 'SELECT * FROM charts WHERE date='.$date;
 
-echo "<div class=col-md-4";
+echo "<div class=col-md-2";
     echo "Date";
     echo "Self";
     echo "Feel";
