@@ -57,7 +57,7 @@
 		}
 	}	
 	
-	$row = $stmt->fetchObject();
+	//$row = $stmt->fetchObject();
 	
 
 //	$loc = $conn->query($sql)->fetchAll(),true;
@@ -67,7 +67,7 @@
 //$result = $conn->query($sql)->fetchAll(),true;
 
 //Coverts results into something readable and alterable in HTML/CSS
-foreach ($array as $key => $value) {
+/*foreach ($stmt as $key => $value) {
 	$bday = $row["date"];
     $self = $row["self"];
     $feel = $row["feel"];
@@ -80,7 +80,7 @@ foreach ($array as $key => $value) {
     $spur = $row["spur"];
     $stop = $row["love"];
 }	
-
+*/
 //echo "<div class="mesa">"."<p>".$date."</p>"."</div>";
   		
 //$result = $conn->query($sql)->fetchAll(),true);
