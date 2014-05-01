@@ -50,7 +50,11 @@
 //SQL query and record return  
 	$conn = new PDO('sqlite:itt.sqlite');
 	$sql = 'SELECT * FROM charts WHERE date='.$date;
-	$stmt = $conn->query($sql);
+	$stmt = $pdo->query($sql);
+	$stmt->bindParam(':self', $self, PDO::PHARAM_INT);
+	$stmt->execute();
+	
+	
 	$row = $stmt->fetchObject();
 	
 
