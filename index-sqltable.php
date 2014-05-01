@@ -52,7 +52,7 @@
 	$sql = 'SELECT * FROM charts WHERE date='.$date;
 	foreach ($conn->query($sql) as $row)
 	{
-	print $row['date']."\t"."<br>";
+	print $row as $date ['date']."\t"."<br>";
 	print $row['self']."\t"."<br>";
     print $row['feel']."\t"."<br>";
     print $row['talk']."\t"."<br>";
