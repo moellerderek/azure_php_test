@@ -18,7 +18,8 @@
 	foreach ($conn->query($sql) as $row)
 	{
 	echo "<div class="col-sm-1">."Date".":"."</div>"."<div class="col-sm-2">".<$row['date']."\t"."</div>"."<br>";
-	print "Self".":".$row['self']."\t"."<br>";
+	echo "<br>";
+  print "Self".":".$row['self']."\t"."<br>";
     print "Feel".":".$row['feel']."\t"."<br>";
     print "Talk".":".$row['talk']."\t"."<br>";
     print "Love".":".$row['love']."\t"."<br>";
