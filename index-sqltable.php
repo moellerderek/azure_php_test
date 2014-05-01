@@ -18,7 +18,7 @@
 	foreach ($conn->query($sql) as $row)
 	{
 	echo $date.":".$row['date']."\t"."<br>";
-	print "Self".":".$row['self']."\t"."<br>";
+	echo $self.":".$row['self']."\t"."<br>";
     print "Feel".":".$row['feel']."\t"."<br>";
     print "Talk".":".$row['talk']."\t"."<br>";
     print "Love".":".$row['love']."\t"."<br>";
