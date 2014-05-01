@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Jew are so funny</title>
+<title>Birthdate Calculator</title>
   <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
   <link href="/css/index.css" rel="stylesheet">
 <!-- Bootstrap core CSS -->
@@ -38,7 +38,6 @@
 			<p>This project is to take a Get Request, and a SQL query and do 				something with them.</p>
 		</div>
 	</div>
-<br>
 
 <?php
 	
