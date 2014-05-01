@@ -52,17 +52,17 @@
 	$sql = 'SELECT * FROM charts WHERE date='.$date;
 	foreach ($conn->query($sql) as $row)
 	{
-	print $row['date']."\t";
-	print $row['self']."\t";
-    print $row['feel']."\t";
-    print $row['talk']."\t";
-    print $row['love']."\t";
-    print $row['does']."\t";
-    print $row['grow']."\t";
-    print $row['pull']."\t";
-    print $row['obox']."\t";
-    print $row['spur']."\t";
-    print $row['stop']."\t";
+	print $row['date']."\t"."<br>";
+	print $row['self']."\t"."<br>";
+    print $row['feel']."\t"."<br>";
+    print $row['talk']."\t"."<br>";
+    print $row['love']."\t"."<br>";
+    print $row['does']."\t"."<br>";
+    print $row['grow']."\t"."<br>";
+    print $row['pull']."\t"."<br>";
+    print $row['obox']."\t"."<br>";
+    print $row['spur']."\t"."<br>";
+    print $row['stop']."\t"."<br>";
 	}
 	
 	//$row = $stmt->fetchObject();
