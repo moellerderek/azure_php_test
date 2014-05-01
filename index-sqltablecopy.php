@@ -30,6 +30,45 @@
     print "Stop".":".$row['stop']."\t"."<br>";
 	}
 	
+	//$row = $stmt->fetchObject();
+	
+
+//	$loc = $conn->query($sql)->fetchAll(),true;
+
+//echo print_r($loc);
+//echo "<pre>".print_r($conn->query($sql)->fetchAll(),true)."</pre><br />";
+//$result = $conn->query($sql)->fetchAll(),true;
+
+
+/*foreach ($stmt as $key => $value) {
+	$bday = $row["date"];
+    $self = $row["self"];
+    $feel = $row["feel"];
+    $talk = $row["talk"];
+    $love = $row["love"];
+    $does = $row["does"];
+    $grow = $row["grow"];
+    $pull = $row["pull"];
+    $obox = $row["obox"];
+    $spur = $row["spur"];
+    $stop = $row["stop"];
+}	
+*/
+//echo "<div class="mesa">"."<p>".$date."</p>"."</div>";
+  		
+//$result = $conn->query($sql)->fetchAll(),true);
+  
+	//print_r($result);
+   
+	//foreach ($result) {
+	//		echo "<pre>";
+	//  	print_r ($result);
+	//  	echo "</pre>"."<br>";
+	//  	}
+
+	//echo "<pre>".print_r($result)."</pre><br />";
+	//echo "<pre>".print_r($array)." \n"."</pre><br />";
+	//include (report.php);
 ?>
 
 </body>
