@@ -50,19 +50,21 @@
 //SQL query and record return  
 	$conn = new PDO('sqlite:itt.sqlite');
 	$sql = 'SELECT * FROM charts WHERE date='.$date;
+
+//Coverts results into something readable and alterable in HTML/CSS
 	foreach ($conn->query($sql) as $row)
 	{
 	print "Date".":".$row['date']."\t"."<br>";
-	print $row['self']."\t"."<br>";
-    print $row['feel']."\t"."<br>";
-    print $row['talk']."\t"."<br>";
-    print $row['love']."\t"."<br>";
-    print $row['does']."\t"."<br>";
-    print $row['grow']."\t"."<br>";
-    print $row['pull']."\t"."<br>";
-    print $row['obox']."\t"."<br>";
-    print $row['spur']."\t"."<br>";
-    print $row['stop']."\t"."<br>";
+	print "Self".":".$row['self']."\t"."<br>";
+    print "Feel".":".$row['feel']."\t"."<br>";
+    print "Talk".":".$row['talk']."\t"."<br>";
+    print "Love".":".$row['love']."\t"."<br>";
+    print "Does".":".$row['does']."\t"."<br>";
+    print "Grow".":".$row['grow']."\t"."<br>";
+    print "Pull".":".$row['pull']."\t"."<br>";
+    print "Obox".":".$row['obox']."\t"."<br>";
+    print "Spur".":".$row['spur']."\t"."<br>";
+    print "Stop".":".$row['stop']."\t"."<br>";
 	}
 	
 	//$row = $stmt->fetchObject();
@@ -74,7 +76,7 @@
 //echo "<pre>".print_r($conn->query($sql)->fetchAll(),true)."</pre><br />";
 //$result = $conn->query($sql)->fetchAll(),true;
 
-//Coverts results into something readable and alterable in HTML/CSS
+
 /*foreach ($stmt as $key => $value) {
 	$bday = $row["date"];
     $self = $row["self"];
