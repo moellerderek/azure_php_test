@@ -41,14 +41,14 @@
 <br>
 
 <div class="sql">
-	<div class="row">
-
+	<div class="container">
+		<div class="row">
 <?php
 	
 	include ('index-sqltable.php')
 
 ?>
-		
+		</div>
 	</div>
 </div>
 </body>
