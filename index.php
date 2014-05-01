@@ -40,11 +40,18 @@
 	</div>
 <br>
 
+<div class="sql">
+	<div class="row">
+		<div class="col-md-4">
 <?php
 	
 	include ('index-sqltable.php')
 
 ?>
+		</div>
+	</div>
+</div>
+
 </body>
 <br>
 
