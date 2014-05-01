@@ -57,26 +57,9 @@
 
 <footer>
 <?php
-<<<<<<< HEAD
-  
-  $date = $_GET['date'];
-  
-  if (!isset($date)) die("SET A DATE ASSHOLE");
-  if ($date < 19200101 OR $date > 20191207) die("WRONG DATE ASSHOLE");
-    
-	$db = odbc_connect("PDO('sqlite:itt.sqlite'", "", "") or die ("could not connect<br />");  
-	
-	$result = $db->query('SELECT * FROM charts WHERE date=' . $date);
 
-  foreach ($result as $resultdate)
-  {
-    print_r($result);
-  } 
-=======
-	
 	include ("footer.php");
-	
->>>>>>> 6b23722c65553a21954a53b4b6687a9203bee6d7
+
 ?>
 </footer>
 </html>
