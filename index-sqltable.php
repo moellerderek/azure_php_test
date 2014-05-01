@@ -1,8 +1,3 @@
-<html>
-<head>
-</head>
-<body>
-
 <?php
 //get request  
   $date = $_GET['date'];
@@ -31,6 +26,3 @@
 	}
 	
 ?>
-
-</body>
-</html>

@@ -1,3 +1,9 @@
+<?php 
+	
+	include ('functions.php'); 
+	
+?>
+
 <html>
 <head>
 <title>Jew are so funny</title>
@@ -32,12 +38,12 @@
     </div>
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
-	<div class="jumbotron">
-		<div class="container">
-			<h1>Birthday Calculator</h1>
-			<p>This project is to take a Get Request, and a SQL query and do 				something with them.</p>
-		</div>
-	</div>
+
+<?php
+ 
+	callJumboTron("Birthday Calculator","This project is to take a Get Request, and a SQL query and do something with them."); 
+?>
+
 <br>
 
 <div class="sql">
@@ -45,7 +51,7 @@
 		<div class="col-md-4">
 <?php
 	
-	include ('index-sqltable.php')
+	include ('index-sqltable.php');
 
 ?>
 		</div>
@@ -59,6 +65,8 @@
 <?php
 	
 	include ("footer.php");
+	callFooter(); 
+	echo returnSecondFooter("derek");
 	
 ?>
 </footer>
