@@ -33,21 +33,7 @@
 	$conn = new PDO('sqlite:itt.sqlite');
 	$sql = 'SELECT * FROM charts WHERE date='.$date;
 
-echo "<div class=col-md-2";
-    echo "Date";
-    echo "Self";
-    echo "Feel";
-    echo "Talk";
-    echo "Love";
-    echo "Does";
-    echo "Grow";
-    echo "Pull";
-    echo "Obox";
-    echo "Spur";
-    echo "Stop";
-echo "</div>";
-
-echo("<div class=col-md-4>");
+echo("<div class=col-md-2>");
 //Coverts results into something readable and alterable in HTML/CSS
 	foreach ($conn->query($sql) as $row)
 	{
