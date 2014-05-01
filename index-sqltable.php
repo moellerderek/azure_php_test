@@ -33,9 +33,8 @@
 //Coverts results into something readable and alterable in HTML/CSS
 	foreach ($conn->query($sql) as $row)
 	{
-	echo "Date".":".<$row['date']."\t"."<br>";
-	echo "<br>";
-  print "Self".":".$row['self']."\t"."<br>";
+	  print "Date".":".<$row['date']."\t"."<br>";
+    print "Self".":".$row['self']."\t"."<br>";
     print "Feel".":".$row['feel']."\t"."<br>";
     print "Talk".":".$row['talk']."\t"."<br>";
     print "Love".":".$row['love']."\t"."<br>";

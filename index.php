@@ -51,9 +51,7 @@
 		
 	</div>
 </div>
-
 </body>
-<br>
 
 <footer>
 <?php
