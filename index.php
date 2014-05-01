@@ -42,7 +42,7 @@
 <!-- Container for SQL Results -->
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-xs-6 col-sm-3">
 <?php
 	
 	include ('index-sqltable.php')
