@@ -34,17 +34,17 @@
 	$sql = 'SELECT * FROM charts WHERE date='.$date;
 
 echo "<div class=col-md-4";
-    print "Date";
-    print "Self";
-    print "Feel";
-    print "Talk";
-    print "Love";
-    print "Does";
-    print "Grow";
-    print "Pull";
-    print "Obox";
-    print "Spur";
-    print "Stop";
+    echo "Date";
+    echo "Self";
+    echo "Feel";
+    echo "Talk";
+    echo "Love";
+    echo "Does";
+    echo "Grow";
+    echo "Pull";
+    echo "Obox";
+    echo "Spur";
+    echo "Stop";
 echo "</div>";
 
 echo("<div class=col-md-4>");
