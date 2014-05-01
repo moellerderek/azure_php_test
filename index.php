@@ -39,12 +39,18 @@
 		</div>
 	</div>
 
+<!-- Container for SQL Results -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
 <?php
 	
 	include ('index-sqltable.php')
 
 ?>
-
+			</div>
+		</div>
+	</div>
 </body>
 
 <footer>
