@@ -40,17 +40,12 @@
 	</div>
 <br>
 
-<div class="sql">
-	<div class="container">
-		<div class="row">
 <?php
 	
 	include ('index-sqltable.php')
 
 ?>
-		</div>
-	</div>
-</div>
+
 </body>
 
 <footer>
