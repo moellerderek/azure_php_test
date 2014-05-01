@@ -42,7 +42,20 @@
 <!-- Container for SQL Results -->
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-md-4">
+				<li>"Date"</li>
+    			<li> "Self"</li>
+    			<li> "Feel"</li>
+    			<li> "Talk"</li>
+    			<li> "Love"</li>
+    			<li> "Does"</li>
+    			<li> "Grow"</li>
+    			<li> "Pull"</li>
+    			<li> "Obox"</li>
+    			<li> "Spur"</li>
+    			<li> "Stop"</li>
+			</div>
+
 <?php
 	
 	include ('index-sqltable.php')
