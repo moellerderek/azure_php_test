@@ -17,7 +17,7 @@
 //Coverts results into something readable and alterable in HTML/CSS
 	foreach ($conn->query($sql) as $row)
 	{
-	print "<div class="col-sm-1">."Date".":".$row['date']."\t"."</div>"."<br>";
+	echo "<div class="col-sm-1">."Date".":"."</div>"."<div class="col-sm-2">".<$row['date']."\t"."</div>"."<br>";
 	print "Self".":".$row['self']."\t"."<br>";
     print "Feel".":".$row['feel']."\t"."<br>";
     print "Talk".":".$row['talk']."\t"."<br>";
