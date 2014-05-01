@@ -50,12 +50,20 @@
 //SQL query and record return  
 	$conn = new PDO('sqlite:itt.sqlite');
 	$sql = 'SELECT * FROM charts WHERE date='.$date;
-	$stmt = $conn->prepare($sql);
-	if ($stmt->execute(array($_GET['date']))) {
-	while ($row = $stmt->fetch()) {
-		print_r($row);
-		}
-	}	
+	foreach ($conn->query($sql) as $row)
+	{
+	print $row['date']."\t";
+	print $row['self']."\t";
+    print $row['feel']."\t";
+    print $row['talk']."\t";
+    print $row['love']."\t";
+    print $row['does']."\t";
+    print $row['grow']."\t";
+    print $row['pull']."\t";
+    print $row['obox']."\t";
+    print $row['spur']."\t";
+    print $row['stop']."\t";
+	}
 	
 	//$row = $stmt->fetchObject();
 	
@@ -78,7 +86,7 @@
     $pull = $row["pull"];
     $obox = $row["obox"];
     $spur = $row["spur"];
-    $stop = $row["love"];
+    $stop = $row["stop"];
 }	
 */
 //echo "<div class="mesa">"."<p>".$date."</p>"."</div>";
