@@ -26,7 +26,7 @@ function returnSecondFooter($brandon) {
 
 }
 
-function keynames() {
+function callkeynames() {
   print_r(array_keys($conn->query($sql)));
 
 ?>
