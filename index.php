@@ -75,11 +75,14 @@
 </body>
 
 <footer>
+<br>
 <?php
 
 	callFooter(); 
 	echo returnSecondFooter("derek");
 
 ?>
+  
+<br>
 </footer>
 </html>
