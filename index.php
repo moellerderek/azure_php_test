@@ -38,22 +38,13 @@
     </div>
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
-<<<<<<< HEAD
 
-<?php
+ <?php
  
-	callJumboTron("Birthday Calculator","This project is to take a Get Request, and a SQL query and do something with them."); 
+	callJumboTron("Birthday Calculator","This project is to take a Get Request, 	and a SQL query and do something with them."); 
 ?>
 
 <br>
-=======
-	<div class="jumbotron">
-		<div class="container">
-			<h1>Birthday Calculator</h1>
-			<p>This project is to take a Get Request, and a SQL query and do 				something with them.</p>
-		</div>
-	</div>
->>>>>>> FETCH_HEAD
 
 <!-- Container for SQL Results -->
 	<div class="container">
