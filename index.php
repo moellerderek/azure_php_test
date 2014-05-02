@@ -59,17 +59,21 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2">
-				<li>Date</li>
-    			<li>Self</li>
-    			<li>Feel</li>
-    			<li>Talk</li>
-    			<li>Love</li>
-    			<li>Does</li>
-    			<li>Grow</li>
-    			<li>Pull</li>
-    			<li>Obox</li>
-    			<li>Spur</li>
-    			<li>Stop</li>
+//				<li>Date</li>
+//    			<li>Self</li>
+//    			<li>Feel</li>
+//    			<li>Talk</li>
+//    			<li>Love</li>
+//    			<li>Does</li>
+//    			<li>Grow</li>
+//    			<li>Pull</li>
+//    			<li>Obox</li>
+//    			<li>Spur</li>
+//    			<li>Stop</li>
+              
+<?php
+              function callKeyNames();
+?>              
 			</div>
 
 <?php
@@ -84,14 +88,9 @@
 <footer>
 <?php
 
-	include ("footer.php");
-<<<<<<< HEAD
 	callFooter(); 
 	echo returnSecondFooter("derek");
-	
-=======
 
->>>>>>> FETCH_HEAD
 ?>
 </footer>
 </html>
