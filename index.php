@@ -72,7 +72,9 @@
 //    			<li>Stop</li>
               
 <?php
-              function callKeyNames();
+              function callKeyNames() {
+  				print_r(array_keys($conn->query($sql)))
+				}
 ?>              
 			</div>
 
