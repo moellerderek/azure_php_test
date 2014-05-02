@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 <html>
 <head>
 <title>Jew are so funny</title>
@@ -24,7 +22,6 @@
 </head>
 <body>
 
->>>>>>> FETCH_HEAD
 <?php
 //get request  
   $date = $_GET['date'];
@@ -40,7 +37,7 @@ echo("<div class=col-md-2>");
 //Coverts results into something readable and alterable in HTML/CSS
 	foreach ($conn->query($sql) as $row)
 	{
-	  print $row['date']."\t"."<br>";
+	print $row['date']."\t"."<br>";
     print $row['self']."\t"."<br>";
     print $row['feel']."\t"."<br>";
     print $row['talk']."\t"."<br>";
@@ -52,14 +49,11 @@ echo("<div class=col-md-2>");
     print $row['spur']."\t"."<br>";
     print $row['stop']."\t"."<br>";
 	}
-<<<<<<< HEAD
 	
 ?>
-=======
 echo "</div>";
 
 ?>
 
 </body>
 </html>
->>>>>>> FETCH_HEAD
