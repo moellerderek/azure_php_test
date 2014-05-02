@@ -51,9 +51,7 @@ echo("<div class=col-md-2>");
 	}
 	
 ?>
-echo "</div>";
-
-?>
+</div>
 
 </body>
 </html>
