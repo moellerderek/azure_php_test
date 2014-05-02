@@ -35,9 +35,10 @@
 
 echo '<div class=col-md-2>';
 
-function callKeyNames() 
+function callKeyNames($names) 
 	{
-	print_r(array_keys($conn->query($sql)))
+  	$names = $conn->query($sql)
+	print_r(array_keys(names)
 	}
 
 echo '</div>';
