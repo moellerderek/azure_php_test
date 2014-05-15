@@ -32,20 +32,32 @@
 //SQL query and record return  
 	$conn = new PDO('sqlite:itt.sqlite');
 	$sql = 'SELECT * FROM charts WHERE date='.$date;
+	$astro = $conn->query($sql);
+	$llaves = $conn->query($sql_column);
+/*
+	
+foreach ($sql_column as $row)
+	{
+	print $row['date']."\t"."<br>";
+    print $row['self']."\t"."<br>";
+    print $row['feel']."\t"."<br>";
+    print $row['talk']."\t"."<br>";
+    print $row['love']."\t"."<br>";
+    print $row['does']."\t"."<br>";
+    print $row['grow']."\t"."<br>";
+    print $row['pull']."\t"."<br>";
+    print $row['obox']."\t"."<br>";
+    print $row['spur']."\t"."<br>";
+    print $row['stop']."\t"."<br>";
+	}
+*/
+/*
+for($i=0; $rows = $query->fetch(); $i++){
+        echo $i." - ".$row['name']."<br/>";
+*/
 
-//echo '<div class=col-md-2>';
-
-//function callKeyNames($names) 
-//	{
-// 	$names = $conn->query($sql)
-//	print_r(array_keys(names)
-//	}
-
-//echo '</div>';
-
-echo '<div class=col-md-2>';
 //Coverts results into something readable and alterable in HTML/CSS
-	foreach ($conn->query($sql) as $row)
+	foreach ($astro as $row)
 	{
 	print $row['date']."\t"."<br>";
     print $row['self']."\t"."<br>";
@@ -62,6 +74,5 @@ echo '<div class=col-md-2>';
 	
 ?>
 </div>
-
 </body>
 </html>

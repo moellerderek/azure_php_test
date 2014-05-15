@@ -23,10 +23,6 @@ function returnSecondFooter($brandon) {
 	$thingy = $thingy * 2;
 	
 	return $thingy;
-
 }
 
-function callKeyNames() {
-  print_r(array_keys($conn->query($sql)));
-}
 ?>
