@@ -7,15 +7,13 @@
 <html>
 <head>
 <title>Birthdate Calculator</title>
-
-<!-- Google Fonts Library -->
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,900' rel='stylesheet' type='text/css'>
-
+  <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
+  <link href="/css/index.css" rel="stylesheet">
 <!-- Bootstrap core CSS -->
-	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
-	<link href="/css/index.css" rel="stylesheet">
+	<link href="/css/jumbotron.css" rel="stylesheet">
 	<link href="/css/sticky-footer.css" rel="stylesheet">
 <!-- Just for debugging purposes. Don't actually copy this line! -->
 <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -36,10 +34,18 @@
 callMasthead("Birthday Calculator");
 
 ?>
+<!-- <div class="masthead">
 
+      <?php
+
+        include ("masthead.php");
+
+      ?>
+    </div>
+ -->
 <!-- Main jumbotron for a primary marketing message or call to action -->
 
-<?php
+ <?php
  
 	callJumboTron("Birthday Calculator","This project is to take a Get Request, and a SQL query and do something with them."); 
 ?>
@@ -49,7 +55,7 @@ callMasthead("Birthday Calculator");
 <!-- Container for SQL Results -->
 	<div class="container">
 		<div class="row">
-			<div class="col-md-1">
+			<div class="col-md-2">
 			
 			
 			<?php
@@ -66,10 +72,23 @@ callMasthead("Birthday Calculator");
 					{
 						if (!is_numeric($name))
 						{
+							echo "<ul>";
 							echo "<li>".$name."</li>";
+							echo "</ul>";
 						}
 					}
-?>
+/*				<li>Date</li>
+    			<li>Self</li>
+    			<li>Feel</li>
+    			<li>Talk</li>
+    			<li>Love</li>
+    			<li>Does</li>
+    			<li>Grow</li>
+    			<li>Pull</li>
+    			<li>Obox</li>
+    			<li>Spur</li>
+    			<li>Stop</li>   
+*/  		?>
 			</div>
 
 <?php
@@ -81,12 +100,15 @@ callMasthead("Birthday Calculator");
 	</div>
 </body>
 
+<footer>
 <br>
 <?php
 
-callFooter(":)")
+	callFooter(); 
+	echo returnSecondFooter("derek");
 
 ?>
   
 <br>
+</footer>
 </html>

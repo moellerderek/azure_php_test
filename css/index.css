@@ -1,12 +1,4 @@
-body 
+.row
 {
-margin: 0;
-background: gray;
-font-family: 'Ruluko', sans-serif;
-margin: 50px;
-}
-
-.math
-{
-
+	list-style-type: none;
 }
