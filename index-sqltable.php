@@ -33,7 +33,7 @@
 	$conn = new PDO('sqlite:itt.sqlite');
 	$sql = 'SELECT * FROM charts WHERE date='.$date;
 	$astro = $conn->query($sql);
-	$llaves = $conn->query($sql_column);
+	//$llaves = $conn->query($sql_column);
 /*
 	
 foreach ($sql_column as $row)
@@ -59,7 +59,13 @@ for($i=0; $rows = $query->fetch(); $i++){
 //Coverts results into something readable and alterable in HTML/CSS
 	foreach ($astro as $row)
 	{
-	print $row['date']."\t"."<br>";
+		for ($i = 0; $i <= count($row); $i++)
+		{
+			print $row[$i]."\t <br>";
+		}
+	
+	
+/*	print $row['date']."\t"."<br>";
     print $row['self']."\t"."<br>";
     print $row['feel']."\t"."<br>";
     print $row['talk']."\t"."<br>";
@@ -70,6 +76,8 @@ for($i=0; $rows = $query->fetch(); $i++){
     print $row['obox']."\t"."<br>";
     print $row['spur']."\t"."<br>";
     print $row['stop']."\t"."<br>";
+    print_r($row);
+*/
 	}
 	
 ?>

@@ -50,26 +50,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2">
-			
-			
-			<?php
-					$date = $_GET['date'];
-					$conn = new PDO('sqlite:itt.sqlite');
-					$sql = 'SELECT * FROM charts WHERE date='.$date;
-					$astro = $conn->query($sql);
-
-					foreach ($astro as $row)
-					{
-						$keys = array_keys($row);
-					}
-					foreach ($keys as $name) 
-					{
-						if (!is_numeric($name))
-						{
-							echo "<li>".$name."</li>";
-						}
-					}
-/*				<li>Date</li>
+				<li>Date</li>
     			<li>Self</li>
     			<li>Feel</li>
     			<li>Talk</li>
@@ -79,8 +60,7 @@
     			<li>Pull</li>
     			<li>Obox</li>
     			<li>Spur</li>
-    			<li>Stop</li>   
-*/  		?>
+    			<li>Stop</li>     
 			</div>
 
 <?php
