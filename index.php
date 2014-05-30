@@ -12,10 +12,9 @@
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,900' rel='stylesheet' type='text/css'>
 
 <!-- Bootstrap core CSS -->
-	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/bootstrap-derek.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
-	<link href="/css/index.css" rel="stylesheet">
 	<link href="/css/sticky-footer.css" rel="stylesheet">
 <!-- Just for debugging purposes. Don't actually copy this line! -->
 <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -33,7 +32,7 @@
 
 <?php
 
-callMasthead("Birthday Calculator");
+callMasthead("Birthday Calculator", "voteforderek.azsurewebsites.net", "http://numbergenerator.azurewebsites.net/?num=25", "Number Counter", "#", "");
 
 ?>
 

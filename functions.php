@@ -1,6 +1,6 @@
 <?php
 
-function callMasthead($title) {
+function callMasthead($title, $home, $l1, $tl1, $l2, $tl2) {
 		echo '<div class='.'"navbar navbar-inverse navbar-fixed-top"'. 'role='.'"navigation">';
 			echo '<div class='.'"container">';
 					echo '<div class='.'"navbar-header">';
@@ -14,10 +14,11 @@ function callMasthead($title) {
         			echo '</div>';
         			echo '<div class='.'"collapse navbar-collapse"'.'>';
           			echo '<ul class='.'"nav navbar-nav"'.'>';
-            			echo '<li class='.'"active"'.'><a href='.'"#"'.'>Home</a></li>';
+            			echo '<li class='.'"active"'.'><a href='.$home.'>Home</a></li>';
             			echo '<li><a href='.'"#about"'.'>About</a></li>';
             			echo '<li><a href='.'"#contact"'.'>Contact</a></li>';
-            			echo '<li><a herf='.'"#projects"'.'>Projects</a></li>';
+            			echo '<li><a herf='."$l1".'>'.$tl1.'</a></li>';
+            			echo '<li><a herf='."$l2".'>'.$tl2.'</a></li>';
             		echo '</ul>';
         		echo '</div><!--/'.'.nav-collapse -->';
       		echo '</div>';
