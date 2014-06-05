@@ -31,7 +31,7 @@
 
 <?php
 
-callMasthead("Birthday Calculator", "voteforderek.azsurewebsites.net", "http://numbergenerator.azurewebsites.net/?num=25", "Number Counter", "#", "");
+callMasthead("Birthday Calculator", "http://voteforderek.azurewebsites.net", "#", "Birthday Calculator", "http://numbergenerator.azurewebsites.net/?num=25", "Number Generator");
 
 ?>
 
